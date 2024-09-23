@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>regform</title>
+    <link rel="stylesheet" href="reg.css">
+
+</head>
+<body>
+    <center>
+    <fieldset>
+    <h1>Regstration form</h1>
+    <form name="regform" onsubmit="return validationform()">
+        <p>
+        <label for="name">Name</label>
+        <input id="name" type="text" placeholder="please enter your full name">
+<span id="name-error" class="error-message"></span>
+</p>
+<p>
+    <label for="address">address</label>
+    <input type="text" id="address" placeholder="enter your full address">
+    <span id="address-error" class="error-message"></span>
+</p>
+<p>
+    <label for="email">email</label>
+    <input type="text" id="email" placeholder="enter u r email">
+    <span name="email-error" class="error-message"></span>
+</p>
+<p>
+    <label for="password">password</label>
+    <input type="text" id="password" placeholder="enter password must contain 8">
+    <span name="password-error" class="error-message"></span>
+</p>
+<p>
+    <label for="phonenumber">phonenumber</label>
+    <input type="text" id="phonenumber" placeholder="enter u r number correct">
+    <span name="phonenumber" class="error-message"></span>
+</p>
+
+<p>
+    <label for="subject">subject</label>
+    <select id="subject" name="subject">
+        <option value="">select course
+        </option>
+        <option value="BTECH">
+BTECH
+        </option>
+        <option value="BCOM">BCOM</option>
+        <option value="BSC">BSC</option>
+
+    </select>
+    <span name="subject-error" class="error-message"></span>
+</p>
+<p>
+    <label for="comment">College Name:</label>
+    <textarea id="comment" name="Comment"></textarea>
+    </p>
+    <p>
+    <input type="checkbox" id="agree" name="Agree" >
+    <label for="agree">I agree to the above
+    information</label>
+    <span id="agree-error" class="error-message"></span>
+    </p>
+    <p>
+    <input type="submit" value="Send" name="Submit" />
+    <input type="reset" value="Reset" name="Reset" />
+    
+    </form>
+    <script src="reg.js"></script>
+    </fieldset>
+</center>
+</body>
+</html>
