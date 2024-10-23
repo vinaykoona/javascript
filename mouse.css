@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.magnifier-container {
+    position: relative;
+    display: inline-block;
+}
+
+#magnify-img {
+    width: 400px; /* Adjust size as needed */
+    height: auto;
+}
+
+.magnifier {
+    position: absolute;
+    border: 3px solid hsl(0, 72%, 35%);
+    border-radius: 50%;
+    cursor: none;
+    visibility: hidden;
+    width: 100px; /* Adjust size of magnifier */
+    height: 100px; /* Adjust size of magnifier */
+    overflow: hidden;
+    pointer-events: none;
+    background-repeat: no-repeat;
+}
